@@ -85,7 +85,7 @@ jobs:
 
     - name: Replace sources
       run: |
-        rm sources/**/*.glyphs
+        rm -f sources/**/*.glyphs
         cp -r updated_sources/ sources/
 
     - name: Replace builded font files
